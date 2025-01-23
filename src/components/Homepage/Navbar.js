@@ -10,19 +10,20 @@ export default function Navbar() {
   const [mobileMenu, setmobileMenu] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md h-[92px] md:h-[46px] w-full">
+    
+    <nav className="bg-white  h-[px] md:h-[46px] w-full">
       <div className="max-w-[1440px] mx-auto px-4 flex justify-between items-center h-full">
         
         <div className="flex items-center space-x-2">
           <img
-            src=" "
+            src="/VincularLogo.png"
             alt="Vincular Logo"
-            className="h-8 md:h-6"
+            className="h-8 md:h-6 w-36"
           />
          
         </div>
-
-        <div className="hidden md:flex space-x-8">
+      
+        <div className="hidden md:flex space-x-8 ">
           <Link href="#about"
             className="text-gray-600 hover:text-gray-800 cursor-pointer"
             onClick={() => console.log('Hello About Us')}
@@ -84,7 +85,6 @@ export default function Navbar() {
               <Link href= "#services"
                 className="block text-gray-600 hover:text-gray-800 cursor-pointer"
                 onClick={() => {
-                  console.log('Navigate to Services/Our Expertise');
                   setmobileMenu(false);
                 }}
               >
@@ -95,7 +95,6 @@ export default function Navbar() {
               <Link href = "#news"
                 className="block text-gray-600 hover:text-gray-800 cursor-pointer"
                 onClick={() => {
-                  console.log('Navigate to News & More');
                   setmobileMenu(false);
                 }}
               >
@@ -106,7 +105,6 @@ export default function Navbar() {
               <Link href = "#reach"
                 className="block text-gray-600 hover:text-gray-800 cursor-pointer"
                 onClick={() => {
-                  console.log('Navigate to Reach Out/Say Hello');
                   setmobileMenu(false);
                 }}
               >
@@ -116,6 +114,9 @@ export default function Navbar() {
           </ul>
         </div>
       )}
+
+    
     </nav>
   );
 }
+
