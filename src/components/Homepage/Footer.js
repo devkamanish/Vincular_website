@@ -1,7 +1,15 @@
 
+
+import { FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { MdFacebook } from "react-icons/md";
+
+
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-10">
+    <footer className="bg-black text-white py-10 rounded-lg">
       <div className="container mx-auto px-6 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
       
@@ -25,7 +33,7 @@ export default function Footer() {
               <li>Data Protection Compliance</li>
             </ul>
           </div>
-
+          
   
           <div className="col-span-1">
             <h2 className="text-lg font-semibold mb-4">Useful Links</h2>
@@ -53,11 +61,14 @@ export default function Footer() {
             </p>
 
             <div className="flex space-x-4 text-xl">
-              <a href="#" className="hover:text-purple-400">X</a>
-              <a href="#" className="hover:text-purple-400">Instagram</a>
-              <a href="#" className="hover:text-purple-400">YouTube</a>
-              <a href="#" className="hover:text-purple-400">LinkedIn</a>
-              <a href="#" className="hover:text-purple-400">Facebook</a>
+              <a href="https://x.com/home" className="hover:text-purple-400"><FaXTwitter />
+              </a>
+              <a href="#" className="hover:text-purple-400"><FaInstagram /></a>
+              <a href="#" className="hover:text-purple-400"><FaLinkedin />
+              </a>
+              <a href="#" className="hover:text-purple-400"><FaYoutube /></a>
+              <a href="#" className="hover:text-purple-400"><MdFacebook />
+              </a>
             </div>
           </div>
 
